@@ -1,0 +1,9 @@
+h1 Activities
+
+form(action="/todos/search", method="GET")
+  input(type="text", name="q")
+  button Search
+
+ul 
+  each activity in activities
+    li= activity.name
